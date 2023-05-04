@@ -21,7 +21,3 @@ Check out a quick video of some of my recent work!
 
 [![Image alt text](https://img.youtube.com/vi/65kLhZoQy_I/0.jpg)](https://www.youtube.com/watch?v=65kLhZoQy_I)
 
-<br><br><br>
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/65kLhZoQy_I">
-</iframe>
