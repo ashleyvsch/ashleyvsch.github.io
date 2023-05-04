@@ -4,18 +4,15 @@ main:
     url: /publications/
 
   - title: "Talks"
-    url: /talks/     
-    
-  - title: "Portfolio"
-    url: /portfolio/
+    url: /talks/  
+
+  - title: "Notes"
+    url: /notes/   
         
-  - title: "Blog Posts"
+  - title: "News"
     url: /year-archive/
     
   - title: "CV"
     url: /files/AVSchwartzCV.pdf
-
-  - title: "Notes"
-    url: /notes/
     
     
