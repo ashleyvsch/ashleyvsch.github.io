@@ -15,3 +15,9 @@ Education
 PhD (2020 - present)  Computational Science, San Diego State University, University of California Irvine
 Graduate Coursework (2019 - 2020) Applied Mathematics, San Diego State University
 B.S. (2015 - 2019) Applied Mathematics, San Diego State University
+
+Check out a quick video of some of my recent work!
+====
+
+[![Image alt text](https://img.youtube.com/vi/65kLhZoQy_I/0.jpg)](https://www.youtube.com/watch?v=65kLhZoQy_I)
+

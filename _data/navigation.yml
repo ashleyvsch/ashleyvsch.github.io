@@ -14,4 +14,8 @@ main:
     
   - title: "CV"
     url: /files/AVSchwartzCV.pdf
+
+  - title: "Notes"
+    url: /year-archive/
+    
     
