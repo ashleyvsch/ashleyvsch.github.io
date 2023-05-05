@@ -1,5 +1,5 @@
 ---
-# layout: archive
+layout: default
 title: "Resources"
 permalink: /resources/
 author_profile: true

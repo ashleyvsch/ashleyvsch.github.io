@@ -1,7 +1,7 @@
 ---
 title: 'New Website'
-date: 2020-05-05
-permalink: /posts/2023/03/mew-website/
+date: 2023-05-05
+permalink: /posts/2023/05/new-website/
 tags:
   - talks
   - conference
