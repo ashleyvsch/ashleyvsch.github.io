@@ -1,0 +1,150 @@
+---
+layout: home
+author_profile: true
+---
+
+---
+title: "Home"
+layout: default
+pagination:
+enabled: true
+author_profile: true
+<!-- description: "My name is Brooke K. Ryan, I’m a graduate student in computational cognitive neuroscience. I’m interested in understanding the computational and neural basis that gives rise to high-level cognition and our uniquely human intelligence. This site contains my an archive of my research projects, writing, and courses I've taught." -->
+---
+
+
+<div class="container">
+
+
+    {% if page.url == "/" %}
+
+    <div class="container mb-5 mt-5">
+        <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+            <div class="h-100 tofront">
+                <div class="row  justify-content-between ">
+                    <div class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                        <div>
+                            <img src="{{site.baseurl}}/images/headshot-square.jpg" alt="Ashley Valentina Schwartz" class="img-home">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 pr-0 align-self-center">
+                        <div class="interesting domainedisplay">welcome!</div>
+                                            <p class="mt-4 mb-4 domainesanstextlight justify-research font-weight-light">
+                                               this is my welcomd?
+                                            <p class="mt-4 mb-4 domainesanstextlight justify-research">
+                                                here is another par
+                                            </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Home Intro -->
+<!--    <div class="jumbotron jumbotron-fluid pt-0 pb-0 mb-2rem bg-lightblue position-relative remove-site-content-margin " >-->
+<!--        <div class="pl-4 pr-0 h-100 tofront">-->
+<!--            <div class="row justify-content-between">-->
+<!--                <div class="col-md-5 pt-6 pb-6 align-self-center" id="ghost-realm">-->
+<!--                    <h3 class="interesting mb-3 font-weight-600">Welcome!</h3>-->
+<!--                    <p class="mt-4 mb-4 fraunces font-weight-light">-->
+<!--                        My name is Brooke Ryan. I recently obtained my M.S. in Computer Science from UC Irvine, and I'm currently working as a researcher with the <a class="a-underline" href="https://mattarlab.ucsd.edu/">Mattar Lab</a> at UC San Diego. Prior to that, I obtained my B.S. in Mathematics-Computer Science from UC San Diego.    </p>-->
+<!--                    <p class="mt-4 mb-4 fraunces font-weight-light">-->
+<!--                        I'm interested in uncovering the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition. This site contains my an archive of my <a class="a-underline" href="{{site.baseurl}}/research/index.html">research projects</a>, <a class="a-underline" href="{{site.baseurl}}/writing/index.html">writing</a>, and <a class="a-underline" href="{{site.baseurl}}/teaching/index.html">courses I've taught</a>.-->
+
+
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/assets/images/flowerbb.jpg);">	</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+</div>
+
+{% endif %}
+
+
+
+
+
+
+
+<!-- Now the rest of the _posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 _posts displayed above -->
+<!-- 
+<div class="container">
+
+<div class="row mt-3 mb-3">
+
+    <div class="col-md-8 main-loop bg-lightpink">
+
+        <h3 class="domainedisplay font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Research</a></span></h3>
+
+        {% assign research = site.publications | concat: site.projects | sort: 'date' | reverse %}
+        {% for page in research %}
+        {% if page.hidden != true %}
+
+        <div class="mb-0 justify-content-between ">
+            <div class="d-flex">
+            <div class="pr-3">
+                <h2 class="domainedisplay mb-1 h4 font-weight-600">
+                    <a class="text-dark " href="{{site.baseurl}}{{page.url}}">{{ page.title }}</a>
+                </h2>
+                <p class="domainesanstextlight"> <em>{{ page.authors }}</em></p>
+                <p class="excerpt fraunces font-weight-light">
+                    {{ page.abstract  | strip_html | strip_newlines | truncate: 141}}
+                </p>
+                <small class="d-block domainesanstextlight">
+                    {% if page.venue %}
+                    {{ page.venue }}
+                    {% else %}
+                    {{ page.date | date: '%b %Y' }}
+                    {% endif %}
+                    <br>
+                </small>
+            </div>
+            {% if page.thumbnail %}
+            <div class="col-md-3 pr-0 text-right">
+                <a href="{{site.baseurl}}{{page.url}}">
+                    <img class="w-100 border-brooke" src="{{ page.thumbnail }}" alt="{{ page.title }}">
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        </div>
+
+        <div class="mb-5">
+
+            <div class="text-muted mb-1 mt-2">
+                {% include icons.html %}
+            </div>
+
+        </div>
+
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="col-md-4 bg-lightpink">
+        <div class="sticky-top sticky-top-offset mb-5">
+            <h3 class="domainedisplay font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Publications</a></span></h3>
+            <ol class="list-featured">
+                {% for page in site.publications %}
+                <li class="mb-4 domainedisplay">
+                <span>
+                    <h6 class="domainesanstextlight"> <a href="{{site.baseurl}}{{ page.url }}">{{ page.authors_no_links }}. {{ page.title }}. <em>{{ page.venue }}.</em></a></h6>
+
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+
+    </div>
+</div> -->
+
+
+
+</div>
