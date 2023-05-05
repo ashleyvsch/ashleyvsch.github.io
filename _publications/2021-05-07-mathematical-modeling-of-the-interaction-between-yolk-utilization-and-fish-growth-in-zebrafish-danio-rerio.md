@@ -3,7 +3,7 @@ title: "Mathematical Modeling Of The Interaction Between Yolk Utilization And Fi
 collection: publications
 # permalink: /publication/2021-05-07-mathematical-modeling-of-the-interaction-between-yolk-utilization-and-fish-growth-in-zebrafish-danio-rerio
 # excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
+date: 2021-05-07
 venue: 'Development'
 link: 'https://doi.org/10.1242/dev.193508'
 # paperurl: 'http://academicpages.github.io/files/paper2.pdf'
