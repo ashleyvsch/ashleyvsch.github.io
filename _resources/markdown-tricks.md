@@ -1,7 +1,7 @@
 ---
 title: 'Markdown Tricks'
 date: 2023-05-05
-permalink: /resources/2023/05/markdown-tricks/
+permalink: /resources/markdown-tricks/
 toc: true
 tags:
   - references

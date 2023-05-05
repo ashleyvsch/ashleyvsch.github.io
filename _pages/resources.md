@@ -10,7 +10,7 @@ Here you will find links to many useful resources and tutorials I have developed
 
 | Bioinformatics |
 |-----------|
-| - [marrkdown tricls](/2023/05/markdown-tricks/) |
+| - [marrkdown tricls](https://ashleyvsch.github.io/resources/markdown-tricks/) |
 | - Other link |
 
 
