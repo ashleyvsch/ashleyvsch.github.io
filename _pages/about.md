@@ -19,6 +19,9 @@ Education
 Research Interests
 =====
 
+My research interests include some things 
+
+
 Check out a quick video of some of my recent work!
 ====
 
