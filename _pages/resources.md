@@ -11,7 +11,7 @@ Here you will find links to many useful resources and tutorials I have developed
 | RNA Sequencing |
 |-----------|
 | - [marrkdown tricks](https://ashleyvsch.github.io/resources/markdown-tricks/) |
-| - Other link |
+| - [galaxy tutorial](https://ashleyvsch.github.io/resources/galaxy-tutorial/) |
 
 
 | Machine Learning |
