@@ -1,7 +1,7 @@
 ---
 # layout: archive
-title: "Notes"
-permalink: /notes/
+title: "Resources"
+permalink: /resources/
 author_profile: true
 ---
 
