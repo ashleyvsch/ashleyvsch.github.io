@@ -1,5 +1,5 @@
 ---
-layout: default
+# layout: default
 title: "Resources"
 permalink: /resources/
 author_profile: true
@@ -10,7 +10,7 @@ Here you will find links to many useful resources and tutorials I have developed
 
 | Bioinformatics |
 |-----------|
-| - [marrkdown tricls](https://ashleyvsch.github.io/resources/markdown-tricks/) |
+| - [marrkdown tricks](https://ashleyvsch.github.io/resources/markdown-tricks/) |
 | - Other link |
 
 
