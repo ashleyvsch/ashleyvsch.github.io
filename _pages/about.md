@@ -22,8 +22,10 @@ I am a computational science PhD student in a joint doctoral program between [Sa
 
 My research interests include some things 
 
-<span style="color: #52747c; font-family: American Typewriter, serif; font-size: 1,7em;">Featured</span>
+<span style="color: #52747c; font-family: American Typewriter, serif; font-size: 1.7em;">Featured</span>
 
+This is a heading
+=====
 
 Check out a quick video of some of my recent work!
 
