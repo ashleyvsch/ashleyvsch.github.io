@@ -12,9 +12,12 @@ I am a computational science PhD student in a joint doctoral program between [Sa
 
 Education
 ======
-PhD (2020 - present)  Computational Science, San Diego State University, University of California Irvine
-Graduate Coursework (2019 - 2020) Applied Mathematics, San Diego State University
-B.S. (2015 - 2019) Applied Mathematics, San Diego State University
+- PhD (2020 - present)  Computational Science, San Diego State University, University of California Irvine
+- Graduate Coursework (2019 - 2020) Applied Mathematics, San Diego State University
+- B.S. (2015 - 2019) Applied Mathematics, San Diego State University
+
+Research Interests
+=====
 
 Check out a quick video of some of my recent work!
 ====
