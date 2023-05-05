@@ -3,11 +3,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/  
-
   - title: "Resources"
-    url: /Resources/   
+    url: /resources/   
         
   - title: "News"
     url: /year-archive/

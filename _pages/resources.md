@@ -5,6 +5,8 @@ permalink: /resources/
 author_profile: true
 ---
 
+Here you will find links to many useful resources and tutorials I have developed throughout the years. 
+
 
 | Bioinformatics |
 |-----------|
@@ -13,6 +15,9 @@ author_profile: true
 
 
 
-Machine Learning 
-=====
+
+
+| Machine Learning |
+|-----------|
+| [PyTorch](https://ashleyvsch.github.io/fashion-mnist/) |
 
