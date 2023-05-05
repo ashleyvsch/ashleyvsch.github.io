@@ -2,8 +2,7 @@
 title: "The Ecotoxicological Contaminant Tris(4-Chlorophenyl)Methanol (TCPMOH) Impacts Embryonic Development In Zebrafish (Danio Rerio)"
 collection: publications
 permalink: /publication/2021-03-26-the-ecotoxicological-contaminant-tris(4-chlorophenyl-methanol-(TCPMOH)-impacts-embryonic-development-in-zebrafish-(Danio-rerio)
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2021-03-2
+date: 2021-03-02
 venue: 'Aquatic Toxicology'
 link: 'https://doi.org/10.1016/j.aquatox.2021.105815'
 citation: 'Navarrete, J., P. Wilson, N. Allsing, C. Gordon, R. Margolis, A. V. Schwartz, C. Cho, B. Rogowski, J. Topps, U. Z. George and K. E. Sant (2021). "The ecotoxicological contaminant tris(4-chlorophenyl)methanol (TCPMOH) impacts embryonic development in zebrafish (Danio rerio)." Aquatic Toxicology 235: 105815.
