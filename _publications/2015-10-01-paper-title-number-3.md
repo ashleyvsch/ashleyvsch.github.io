@@ -2,11 +2,11 @@
 title: "Acetylcholine Regulates Pulmonary Pathology During Viral Infection and Recovery"
 collection: publications
 permalink: /publication/2020-12-01-acetylcholine-regulates-pulmonary-pathology-during-viral-infection-and-recovery
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+# excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2020-12-01
 venue: 'ImmunoTargets and Therapy'
-paperurl: 'http://ashleyvsch.github.io/'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+# paperurl: 'http://ashleyvsch.github.io/'
+citation: 'this is the cite.'
 link: 'https://doi.org/10.2147/ITT.S279228'
 abstract: "__Introduction__: This study was designed to explore the role of acetylcholine (ACh) in pulmonary viral infection and recovery. Inflammatory control is critical to recovery from respiratory viral infection. ACh secreted from non-neuronal sources, including lymphocytes, plays an important, albeit underappreciated, role in regulating immune-mediated inflammation.
 __Methods__: ACh and lymphocyte cholinergic status in the lungs were measured over the course of influenza infection and recovery. The role of ACh was examined by inhibiting ACh synthesis in vivo. Pulmonary inflammation was monitored by Iba1 immunofluorescence, using a novel automated algorithm. Tissue repair was monitored histologically.
