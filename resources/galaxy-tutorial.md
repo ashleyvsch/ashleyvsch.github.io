@@ -32,37 +32,37 @@ The starting point for all RNA-Seq analysis is to assess and organize the data y
 
 The important things are to recognize your sample names and remind yourself if you have a single or paired-end read. If you have a paired end read, you should have two files per sample, one with R1 in the file name and another with R2. Sometimes you might end up with four files per sample. This usually means you have two R1 files and two R2 files. Sometimes the sequencing center will send the FASTQ files that way to reduce the storage per file. If this is the case, each R1 file just needs to be concatenated, and same with the R2 files. It can be done on Galaxy or on your command line! If you want to concatenate on the command line, you would do this before you upload the files to Galaxy. 
 
-- Option 1: Concatenate files on the command line
-  Here is an example of a time I ran into this. I saved all my FASTQ files in a folder and saw that there were 4 files per sample. To concatenate them on the command line I executed the following commands in my terminal:
+Option 1: Concatenate files on the command line
+Here is an example of a time I ran into this. I saved all my FASTQ files in a folder and saw that there were 4 files per sample. To concatenate them on the command line I executed the following commands in my terminal:
 
-  1. Move to the folder where your files are located
-  ``` bash
-  # move to the folder where your files are located
-  cd /Users/ashleyschwartz/Documents/Research/05_boscalite_boscalid/raw_data
-  ```
-  2. Remind yourself of the file names by listing all files in the folder. If you do this you should see all your files listed and it should look something like this"
-  ``` bash
-  ls
-  ```
-  with output (just showing first few lines):
-  ``` 
-  A1_DMSO_1_S119_L004_R1_001.fastq.gz
-  A1_DMSO_1_S119_L004_R2_001.fastq.gz
-  A1_DMSO_1_S92_L001_R1_001.fastq.gz
-  A1_DMSO_1_S92_L001_R2_001.fastq.gz
-  ```
-  3. Concatenate them! We can see that we have two R1 files for DMSO 1 and two R2 files. We can concatenate them by typing:
+1. Move to the folder where your files are located
+``` bash
+# move to the folder where your files are located
+cd /Users/ashleyschwartz/Documents/Research/05_boscalite_boscalid/raw_data
+```
+2. Remind yourself of the file names by listing all files in the folder. If you do this you should see all your files listed and it should look something like this"
+``` bash
+ls
+```
+with output (just showing first few lines):
+``` 
+A1_DMSO_1_S119_L004_R1_001.fastq.gz
+A1_DMSO_1_S119_L004_R2_001.fastq.gz
+A1_DMSO_1_S92_L001_R1_001.fastq.gz
+A1_DMSO_1_S92_L001_R2_001.fastq.gz
+```
+3. Concatenate them! We can see that we have two R1 files for DMSO 1 and two R2 files. We can concatenate them by typing:
 
-  ```
-  cat A1_DMSO_1_S119_L004_R1_001.fastq.gz A1_DMSO_1_S92_L001_R1_001.fastq.gz > DMSO_1_R1.fastq.gz
-  cat A1_DMSO_1_S119_L004_R2_001.fastq.gz A1_DMSO_1_S92_L001_R2_001.fastq.gz > DMSO_1_R1.fastq.gz
-  ```
+```
+cat A1_DMSO_1_S119_L004_R1_001.fastq.gz A1_DMSO_1_S92_L001_R1_001.fastq.gz > DMSO_1_R1.fastq.gz
+cat A1_DMSO_1_S119_L004_R2_001.fastq.gz A1_DMSO_1_S92_L001_R2_001.fastq.gz > DMSO_1_R1.fastq.gz
+```
 
-  4. (optional) You could write a script to do this automatically for all files in the folder. Some tricks to get going on this would be a few of these commands (I might come back to this and finish out the script):
-  ``` bash
-  # get the DMSO R1 file names
-  find . -type f -name '*DMSO_1*R1*'
-  ```
+4. (optional) You could write a script to do this automatically for all files in the folder. Some tricks to get going on this would be a few of these commands (I might come back to this and finish out the script):
+``` bash
+# get the DMSO R1 file names
+find . -type f -name '*DMSO_1*R1*'
+```
 
 ## 
 
