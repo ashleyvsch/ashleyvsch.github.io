@@ -8,15 +8,14 @@ author_profile: true
 Here you will find links to many useful resources and tutorials I have developed throughout the years. 
 
 
-| RNA Sequencing |
-|-----------|
-| [Galaxy Tutorial](/resources/galaxy-tutorial/) |
+## RNA Sequencing
 
+[Galaxy Tutorial](/resources/galaxy-tutorial/)
 
-| Machine Learning |
-|-----------|
-| [PyTorch](/fashion-mnist/PytorchFashionMNIST.html) |
+## Machine Learning
 
-| Random | 
-|-----|
-| [Markdown Tricks](/resources/markdown-tricks/) |
+[PyTorch](/fashion-mnist/PytorchFashionMNIST.html)
+
+## Random
+
+[Markdown Tricks](/resources/markdown-tricks/)
