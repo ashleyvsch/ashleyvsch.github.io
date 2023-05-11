@@ -3,6 +3,7 @@ title: 'Galaxy Tutorial'
 date: 2023-05-05
 permalink: /resources/galaxy-tutorial/
 layout: single
+excerpt: 'This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source web-based platform for data intensive biomedical research. Galaxy is great for conducting RNA-seq analysis when you don't have access to the appropriate computing resources.'
 collection: resource
 toc: true
 tags:
@@ -11,6 +12,8 @@ tags:
 ---
 
 _This tutorial is loosely based on the training material offered by Galaxy that can be found [here](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html). This tutorial starts from the beginning, assuming little to no experience with Galaxy._
+
+**In this tutorial, you will go from raw sequencing reads (FASTQ files) to gene counts in Galaxy**
 
 # Introduction
 
@@ -39,12 +42,12 @@ On the top left hand corner, click the `+` sign to create a new history. You can
 
 The starting point for all RNA-Seq analysis is to assess and organize the data you have. Typically, you will receive the raw sequencing reads from the sequencing center in FASTQ format. These files should have a suffix of `.fastq`, `.fastq.gz`, `.fq`, or `.fq.gz`. Naming conventions are also super important. I am including typical illumina naming conventions here for more information ([see here for more](https://support.illumina.com/help/BaseSpace_OLH_009008/Content/Source/Informatics/BS/NamingConvention_FASTQ-files-swBS.htm)):
 
->FASTQ files are named with the sample name and the sample number, which is a numeric assignment based on the order that the sample is listed in the > sample sheet. For example: SampleName_S1_L001_R1_001.fastq.gz
->    - SampleName—The sample name provided in the sample sheet. If a sample name is not provided, the file name includes the sample ID, which is a required field in the sample sheet and must be unique.
->    - S1—The sample number based on the order that samples are listed in the sample sheet starting with 1. In this example, S1 indicates that this sample is the first sample listed in the sample sheet.
->    - L001—The lane number.
->    - R1—The read. In this example, R1 means Read 1. For a paired-end run, there is at least one file with R2 in the file name for Read 2. When generated, index reads are I1 or I2.
->    - 001—The last segment is always 001.
+>FASTQ files are named with the sample name and the sample number, which is a numeric assignment based on the order that the sample is listed in the > sample sheet. For example: `SampleName_S1_L001_R1_001.fastq.gz`
+>    - `SampleName`—The sample name provided in the sample sheet. If a sample name is not provided, the file name includes the sample ID, which is a required field in the sample sheet and must be unique.
+>    - `S1`—The sample number based on the order that samples are listed in the sample sheet starting with 1. In this example, S1 indicates that this sample is the first sample listed in the sample sheet.
+>    - `L001`—The lane number.
+>    - `R1`—The read. In this example, R1 means Read 1. For a paired-end run, there is at least one file with R2 in the file name for Read 2. When generated, index reads are I1 or I2.
+>    - `001`—The last segment is always `001`.
 
 The important things are to recognize your sample names and remind yourself if you have a single or paired-end read. If you have a paired end read, you should have two files per sample, one with R1 in the file name and another with R2. Sometimes you might end up with four files per sample. This usually means you have two R1 files and two R2 files. Sometimes the sequencing center will send the FASTQ files that way to reduce the storage per file. If this is the case, each R1 file just needs to be concatenated, and same with the R2 files. It can be done on Galaxy or on your command line! If you want to concatenate on the command line, you would do this before you upload the files to Galaxy. 
 
@@ -161,7 +164,7 @@ This will generate two files for each sample in your history and each file shoul
 - FastQC on data 1: Raw
 The webpage will be a html report where we can visualize the statistics for each sample. The tag does help us identify the samples, but the changing the sample names is also important. Otherwise, the sample name in the report will show up as  `FastQC on data 1` and not the actual sample name `DMSO_1`. 
 
-Check out [here](/resources/assets/galaxy-tutorial/DMSO_1_R1_FastQC.html) for the full FastQC report for the `DMSO_1_R1` sample.
+Check out [here](/resources/assets/galaxy-tutorial/DMSO_1_R1_FastQC.html) for the full FastQC report for the `DMSO_1_R1` sample. Notice the read length is 101. This will come in handy later!
 
 > **Rename each file**
 > - click the <i class="fas fa-pen"></i> icon to the left of the item name.
@@ -191,9 +194,9 @@ Check out [here](/resources/assets/galaxy-tutorial/MultiQC_RawData_TCPMOH.html) 
 
  Based on the quality control report, you can decide whether or not trimming is necessary. One interesting thing to not is that aligners like STAR will auto trim a bit so trimming is sometimes not advised unless there is a major issue (lots of poor quality bases, high adapter content, etc). It also depends on the library prep and their recommendations. In any case, we can trim using the cutadapt tool.
 
- Check out [illumina's documentation](https://knowledge.illumina.com/library-preparation/general/library-preparation-general-reference_material-list/000001314) to see which adapter sequences to trim. 
+ Check out [illumina's documentation](https://knowledge.illumina.com/library-preparation/general/library-preparation-general-reference_material-list/000001314) to see which adapter sequences to trim. Additionally, illumina recommends to [trim the t-overhang](https://www.illumina.com/content/dam/illumina/gcs/assembled-assets/marketing-literature/illumina-stranded-rna-t-overhang-tech-note-470-2020-010/illumina-stranded-rna-t-overhang-tech-note-470-2020-010.pdf).
 
- In the tool search bar, type cutadapt and click on _Cutadapt: Remove adapter sequences from FASTQ/FASTA_
+ In the tool search bar, type cutadapt and click on `Cutadapt: Remove adapter sequences from FASTQ/FASTA`
 
 > **<i class="fas fa-wrench"></i> Cutadapt** with the following parameters:
 > - Single-end or Paired-end reads?
@@ -210,14 +213,16 @@ Check out [here](/resources/assets/galaxy-tutorial/MultiQC_RawData_TCPMOH.html) 
 >       - In "Source"
 >         - Select `enter custom sequence` from drop down
 >         - "Enter custom 3' adapter name": name it whatever you'd like
->         - "Enter custom 3' adapter sequence": AGATCGGAAGAG
+>         - "Enter custom 3' adapter sequence": AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+>   - cut bases from from reads before adapter trimming: 1
 > - In "Read 2 Options"
 >   - 3' (End) Adapters, this is where you would input the adapter sequence for read 1
 >     - <i class="fas fa-plus"></i> Insert 3' (End) Adapters
 >       - In "Source"
 >         - Select `enter custom sequence` from drop down
 >         - "Enter custom 3' adapter name": name it whatever you'd like
->         - "Enter custom 3' adapter sequence": AGATCGGAAGAG
+>         - "Enter custom 3' adapter sequence": AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+>   - cut bases from the second read in each pair: 1
 > - In "Filter Options"
 >   - Minimum length (R1): 20
 > - In "Read Modification Options
@@ -253,10 +258,10 @@ It is useful to compare the FastQC reports from the trimmed samples to the origi
 
 To make sense of the reads, we need to first figure out where the sequences originated from in the genome, so we can then determine to which genes they belong. When a reference genome for the organism is available, this process is known as aligning or “mapping” the reads to the reference. For the zebrafish, we have a couple of options. Lets use the latest genome assembly danRer11. These files can be found [here](https://hgdownload.soe.ucsc.edu/goldenPath/danRer11/bigZips/). 
 
-In Galaxy, we can fetch the necessary data from the web using the Upload Data tool. 
+In Galaxy, we can fetch the necessary data from the web using the `Upload Data` tool. 
 
 > **<i class="fas fa-upload"></i> Upload Data**
-> ** Paste/Fetch Data
+> - Paste/Fetch Data
 >   - In "Download data from the web by entering URLs (one per line) or directly paste content." copy and paste the following two lines. 
 >     ```
 >     https://hgdownload.soe.ucsc.edu/goldenPath/danRer11/bigZips/danRer11.fa.gz
@@ -276,7 +281,7 @@ danRer11.ncbiRefSeq.gtf.gz
 
 ## STAR
 
-Search the tools for STAR and click "RNA STAR Gapped-read mapper for RNA-seq data".
+Search the tools for STAR and click `RNA STAR Gapped-read mapper for RNA-seq data`.
 
 > **<i class="fas fa-wrench"></i> RNA STAR** with the following parameters:
 > - In "Single-end or paired-end reads"
@@ -294,7 +299,7 @@ Search the tools for STAR and click "RNA STAR Gapped-read mapper for RNA-seq dat
 >   - Gene model (gff3,gtf) file for splice junctions: 
 >     - select .gtf file that was fetched: danRer11.ncbiRefSeq.gtf.gz
 >   - Length of the genomic sequence around annotated junctions
->     - This is `read length - 1` and if you remmeber from FastQC we saq our read length was 101, so we would type 100 here. 
+>     - This is `read length - 1` and if you remember from FastQC we saq our read length was 101, so we would type 100 here. 
 > - **<i class="fas fa-play"></i> Run Tool**
 
 You should see three files per sample. This step will take the longest! In fact, STAR requires lots of memory. I have found at times when Galaxy is backed up, STAR can fail due to memory usage. This doesn't mean your samples are messed up, this just means there was an issue with the job. If your're trouble shooting, I recommend clicking the <i class="fas fa-info"></i> icon on the failed file and reading through the job statistics. You can also easily re-reun the job with the same parameters by pressing the <i class="fas fa-replay"></i> icon on the failed file. Just make sure the variables are as you expect them! Upon proper completion, the three file names for each sample should look something like:
@@ -317,7 +322,7 @@ It is always a good idea to rename the files!
 
 **Check STAR Results**
 
-We can use the MultiQC tool to double check the stats from the alignment step!
+We can use the `MultiQC` tool to double check the stats from the alignment step!
 
 > **MultiQC <i class="fas fa-wrench"></i><i class="fas fa-gear"></i>** with the following parameters:
 > - In the Results box
@@ -335,7 +340,7 @@ Check out [here](/resources/assets/galaxy-tutorial/MultiQC_STAR.html) for the fu
 
 To actually count the number of reads per annotated gene, we have to confirm the strandedness of our samples. To do this we will use Infer Experiment, which is a tool in the quality control RSeQC toolbox. 
 
-In the tool search bar, search "convert GTF" and select "Convert GTF to BED 12"
+In the tool search bar, search "convert GTF" and select `Convert GTF to BED 12`
 
 > **<i class="fas fa-wrench"></i> Convert GTF to BED12** with the following parameters:
 > - GTF File to convert: danRer11.ncbiRefSeq.gtf.gz
@@ -396,14 +401,14 @@ We can conclude our data is reverse stranded. We can also run **MultiQC** on the
 >       - select each file outputted from Infer Experiment
 > - **<i class="fas fa-play"></i> Run Tool**
 
-Check out [here](/resources/assets/galaxy-tutorial/MultiQC_InferExperiment.html) for the full MultiQC report for each of the samples used in this study. Pay close attention to the % aligned. Notice they all have >90% antisense, which means they are all reverse stranded as expected. 
+Check out [here](/resources/assets/galaxy-tutorial/MultiQC_InferExperiment.html) for the full `MultiQC` report for each of the samples used in this study. Pay close attention to the % aligned. Notice they all have >90% antisense, which means they are all reverse stranded as expected. 
 
 ## featureCounts
 
-Now that we have confirmed the strandedness, we can actually count all the genes! For this, we will use the featureCounts tool. In the tool search bar, search for featureCounts and select "featureCounts
-Measure gene expression in RNA-Seq experiments from SAM or BAM files".
+Now that we have confirmed the strandedness, we can actually count all the genes! For this, we will use the `featureCounts` tool. In the tool search bar, search for `featureCounts` and select `featureCounts
+Measure gene expression in RNA-Seq experiments from SAM or BAM files`.
 
-> **<i class="fas fa-wrench"></i> with the following parameters:
+> **<i class="fas fa-wrench"></i> featureCounts** with the following parameters:
 > - Alignment file: select multiple datasets (middle icon)
 >   - select each of the mapped.bam files (output from STAR) for each sample
 > - Specify strand information: Stranded (Reverse)
@@ -413,17 +418,19 @@ Measure gene expression in RNA-Seq experiments from SAM or BAM files".
 > - In "Does the input have read pairs?"
 >   - select "Yes, paired-end and count them as 1 single fragment" from the drop bar
 
+**Check featureCounts Results**
+
+To analyze the results of `featureCounts`, we will use `MultiQC`. 
+
 > **MultiQC <i class="fas fa-wrench"></i><i class="fas fa-gear"></i>** with the following parameters:
 > - In the Results box
 >   - Which tool was used to generate logs?
->     - featureCounts
->   - + Insert featureCounts output
->     - select each of the summary report outputs from featureCounts
+>     - `featureCounts`
+>   - + Insert `featureCounts` output
+>     - select each of the summary report outputs from `featureCounts`
 > - **<i class="fas fa-play"></i> Run Tool**
 
-**Check featureCounts Results**
-
-At this point, you have two options. You can run DESeq2 on Galaxy or on R. I like to run DESeq on R since I can generate plots and other items directly. To do this, download the featureCounts results and follow the next tutorial!
+At this point, you have two options. You can run DESeq2 on Galaxy or on R. I like to run DESeq on R since I can generate plots and other items directly. To do this, download the `featureCounts` results and follow the next tutorial!
 
 # References 
 
