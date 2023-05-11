@@ -327,6 +327,8 @@ We can use the MultiQC tool to double check the stats from the alignment step!
 >     - select each log files that were outputted from STAR
 > - **<i class="fas fa-play"></i> Run Tool**
 
+Check out [here](/resources/assets/galaxy-tutorial/MultiQC_STAR.html) for the full MultiQC report for each of the samples used in this study. Pay close attention to the % aligned. We would like this to be > 70%, which it is for each sample.  
+
 # Counting the Reads per Annotated Gene
 
 **Identifying the Strandedness**
@@ -394,9 +396,34 @@ We can conclude our data is reverse stranded. We can also run **MultiQC** on the
 >       - select each file outputted from Infer Experiment
 > - **<i class="fas fa-play"></i> Run Tool**
 
+Check out [here](/resources/assets/galaxy-tutorial/MultiQC_InferExperiment.html) for the full MultiQC report for each of the samples used in this study. Pay close attention to the % aligned. Notice they all have >90% antisense, which means they are all reverse stranded as expected. 
+
 ## featureCounts
 
+Now that we have confirmed the strandedness, we can actually count all the genes! For this, we will use the featureCounts tool. In the tool search bar, search for featureCounts and select "featureCounts
+Measure gene expression in RNA-Seq experiments from SAM or BAM files".
+
+> **<i class="fas fa-wrench"></i> with the following parameters:
+> - Alignment file: select multiple datasets (middle icon)
+>   - select each of the mapped.bam files (output from STAR) for each sample
+> - Specify strand information: Stranded (Reverse)
+> - In "Gene annotation file":
+>   - select "A GFF/GTF file in your history"
+>   - Gene annotation file: danRer11.ncbiRefSeq.gtf.gz
+> - In "Does the input have read pairs?"
+>   - select "Yes, paired-end and count them as 1 single fragment" from the drop bar
+
+> **MultiQC <i class="fas fa-wrench"></i><i class="fas fa-gear"></i>** with the following parameters:
+> - In the Results box
+>   - Which tool was used to generate logs?
+>     - featureCounts
+>   - + Insert featureCounts output
+>     - select each of the summary report outputs from featureCounts
+> - **<i class="fas fa-play"></i> Run Tool**
+
 **Check featureCounts Results**
+
+At this point, you have two options. You can run DESeq2 on Galaxy or on R. I like to run DESeq on R since I can generate plots and other items directly. To do this, download the featureCounts results and follow the next tutorial!
 
 # References 
 
