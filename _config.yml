@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Ashley Valentina Schwartz"
 title_separator          : "-"
 name                     : &name "Ashley Valentina Schwartz"
-description              : &description "personal description"
+description              : &description "Personal website, tutorials, etc. "
 logo                     : "images/icon.jpeg"
 url                      : https://ashleyvsch.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -176,16 +176,13 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  resource:
     output: true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -210,15 +207,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _resource
   - scope:
       path: ""
-      type: teaching
+      type: resource
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
+      related: true
   # _publications
   - scope:
       path: ""
@@ -237,14 +235,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
