@@ -2,6 +2,8 @@
 # layout: default
 title: "Resources"
 permalink: /resources/
+layout: single
+toc: true
 author_profile: true
 ---
 

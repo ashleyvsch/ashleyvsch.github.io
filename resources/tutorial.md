@@ -1,14 +1,15 @@
 ---
-title: 'From Gene Counts to Differential Expression - DESeq2 Tutorial'
+title: tutorial
 output:
   md_document:
     variant: gfm
     preserve_yaml: TRUE
 knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../resources") })
-date: '2023-05-11'
-permalink: /resources/deseq2-tutorial/
-excerpt: "This tutorial is a continuation of the Galaxy tutorial where we go from gene counts to differential expression using DESeq2. We even go through plotting and analysis!"
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "/Users/ashleyschwartz/Documents/ashleyvsch.github.io/resources") })
+date: '2023-05-12'
+permalink: /resources/tutorial
+excerpt: "bruh"
+collection: resource
 layout: single
 toc: true
 categories:
@@ -19,15 +20,15 @@ categories:
 *note: this tutorial is loosely based off the DESeq2 and bioconductor
 documentation found
 [here](http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html).
-Some explanation text is taken directly from the documentation and
+Some explation text is taken directly from the documenation and
 referenced.*
 
 **In this tutorial, we will walk through going from gene counts to
-differential expression results.**
+differenital expression results.**
 
 # Introduction
 
-The true end goal in RNA Sequencing analysis is determining the genes
+The true end goal in RNA Sequencing analysis is detemining the genes
 that are differentially expressed between a control and treatment group.
 In this case, if you followed the previous tutorial, you know we are
 investigating the transcriptomic response of TCPMOH on the developing
@@ -70,13 +71,13 @@ library(ggplot2)
 # Getting Started - Data
 
 This tutorial assumes you have a file, per sample, of gene counts. This
-would be a typical output from a tool such as featureCounts which we
+would be a typcial output from a tool such as featureCounts which we
 used in the previous tutorial. To give an idea of what this looks like,
 lets peak into one of the files:
 
 ``` r
 # define the path to the file
-# note this path is relative to the current working directory and the files are stored in a folder called data
+# note this path is relative to the current working direcotry and the files are stored in a folder called data
 dmso1_data_file_path <- 'data/DMSO_1_counts.tsv'
 # read in the file
 dmso_1_count_data <- read.csv(dmso1_data_file_path, header = TRUE, sep = "\t")
@@ -403,10 +404,10 @@ acceptable, we can consider all genes with an adjusted p value below
 Mathematically speaking, any log2FC value different than zero with low
 variability. Typically speaking, you will see people identify a
 differentially expressed gene for log2FC cutoff value between 1-1.5
-(positive or negative). Additionally, the adjusted p-value is typically
+(positive or negative). Aditionally, the adjusted p-value is typically
 chosen to be \<0.05 but is sometimes chosen to be \<0.1 (DESeq default)
 or even \<0.01 for stronger statistical confidence. For this tutorial, I
-will choose genes with an adjusted p-value \<0.05 and a `|Log2FC|<1`.
+will choose genes with an adjusted p-value \<0.05 and a `|Log2FC|<`1.
 
 ``` r
 # convert results data to basic dataframe
@@ -427,8 +428,8 @@ Notice the column names! The columns we are typically interested in are
 
 **PCA Plot**
 
-*Portions of this section were taken from [this
-tutorial](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.html)*.
+\_Portions of this section were taken from [this
+tutorial](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.html).
 DESeq2 has a built-in function for plotting PCA plots, that uses ggplot2
 under the hood. This is great because it saves us having to type out
 lines of code and having to fiddle with the different ggplot2 layers. In
@@ -443,7 +444,7 @@ rld <- rlog(dds)
 plotPCA(rld)
 ```
 
-![](/resources/assets/deseq2-tutorial/unnamed-chunk-20-1.png)<!-- -->
+![](/images/posts/tutorial/unnamed-chunk-20-1.png)<!-- -->
 
 By default the function uses the top 500 most variable genes. Ideally,
 we would want to see that our samples cluster together based on
@@ -543,7 +544,7 @@ xlim(-4.5, 4.5)
 p1
 ```
 
-![](/resources/assets/deseq2-tutorial/volcano-plot-1.png)<!-- -->
+![](/images/posts/tutorial/unnamed-chunk-23-1.png)<!-- -->
 
 *Basic Volcano Plot - Red Significant Genes*
 
@@ -560,7 +561,7 @@ theme(legend.position = "none")
 p2
 ```
 
-![](/resources/assets/deseq2-tutorial/volcano-plot-colored-1.png)<!-- -->
+![](/images/posts/tutorial/unnamed-chunk-24-1.png)<!-- -->
 
 ``` r
 # with labels for top 10 sig overall
@@ -577,9 +578,8 @@ geom_text_repel(aes(label = label), size = 2.5)
 p3
 ```
 
-![](/resources/assets/deseq2-tutorial/volcano-plot-labels-1.png)<!-- -->
-
-*Up/Down Regulated Genes Identified*
+![](/images/posts/tutorial/unnamed-chunk-25-1.png)<!-- --> *Up/Down
+Regulated Genes Identified*
 
 ``` r
 # plot with up/down
@@ -593,9 +593,8 @@ xlim(-4.5, 4.5)
 p4
 ```
 
-![](/resources/assets/deseq2-tutorial/volcano-plot-reg-colored-1.png)<!-- -->
-
-*Up/Down Regulated Genes Identified and Labels*
+![](/images/posts/tutorial/unnamed-chunk-26-1.png)<!-- --> *Up/Down
+Regulated Genes Identified and Labels*
 
 ``` r
 p5 <- ggplot(data, aes(log2FoldChange, -log(pvalue,10))) + # -log10 conversion
@@ -609,7 +608,7 @@ geom_text_repel(aes(label = label), size = 2.5)
 p5
 ```
 
-![](/resources/assets/deseq2-tutorial/volcano-plot-labels-colored-1.png)<!-- -->
+![](/images/posts/tutorial/unnamed-chunk-27-1.png)<!-- -->
 
 # Conclusion
 

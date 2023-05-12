@@ -3,7 +3,7 @@ title: 'Galaxy Tutorial'
 date: 2023-05-05
 permalink: /resources/galaxy-tutorial/
 layout: single
-excerpt: 'This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source web-based platform for data intensive biomedical research. Galaxy is great for conducting RNA-seq analysis when you don't have access to the appropriate computing resources.'
+excerpt: "This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source web-based platform for data intensive biomedical research. Galaxy is great for conducting RNA-seq analysis when you don't have access to the appropriate computing resources."
 collection: resource
 toc: true
 tags:
@@ -430,7 +430,7 @@ To analyze the results of `featureCounts`, we will use `MultiQC`.
 >     - select each of the summary report outputs from `featureCounts`
 > - **<i class="fas fa-play"></i> Run Tool**
 
-At this point, you have two options. You can run DESeq2 on Galaxy or on R. I like to run DESeq on R since I can generate plots and other items directly. To do this, download the `featureCounts` results and follow the next tutorial!
+At this point, you have two options. You can run DESeq2 on Galaxy or on R. I like to run DESeq on R since I can generate plots and other items directly. To do this, download the `featureCounts` results and follow the [next tutorial](/resources/deseq2-tutorial.md)!
 
 # References 
 
