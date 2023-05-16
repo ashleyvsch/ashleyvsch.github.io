@@ -21,7 +21,7 @@ feature_row:
     url: "/2023/04/acsess-2023"
     btn_label: "Read More"
     btn_class: "btn--inverse"
-  - image_path: george-lab-members.jpg
+  - image_path: george-lab-members.JPG
     title: "George Lab"
     excerpt: "Check out the George Lab website for information about all the cool work we are working on!"
     url: "https://georgelab.sdsu.edu/people"
@@ -29,7 +29,7 @@ feature_row:
     btn_class: "btn--inverse"    
 ---
 
-I am a computational science PhD student in a joint doctoral program between [San Diego State University](https://www.sdsu.edu/) and [University of California Irvine](https://uci.edu/). My research interests include developing and utilizing mathematical and computational modeling techniques for biological applications. The primary focus of my doctoral research is in computational developmental toxicology. I am under the of [Dr. Uduak George](https://georgelab.sdsu.edu/) and [Dr. Karilyn Sant](https://publichealth.sdsu.edu/people/karilyn-sant/). For more information about my research please visit my [research page](/research)!
+I am a computational science PhD student in a joint doctoral program between [San Diego State University](https://www.sdsu.edu/) and [University of California Irvine](https://uci.edu/). My research interests include developing and utilizing mathematical and computational modeling techniques for biological applications. The primary focus of my doctoral research is in computational developmental toxicology. I am under the advisement of [Dr. Uduak George](https://georgelab.sdsu.edu/) and [Dr. Karilyn Sant](https://publichealth.sdsu.edu/people/karilyn-sant/). For more information about my research please visit my [research page](/research)!
 {: .text-justify}
 
 <hr>
