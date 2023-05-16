@@ -15,8 +15,9 @@
    /* system typefaces */
    $serif                      : Georgia, Times, serif;
    $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-   $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
-   
+   // $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+   $monospace                  : SFMono-Regular, "Domaine Sans Text Light", Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+
    /* sans serif typefaces */
    $sans-serif-narrow          : $sans-serif;
    $helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
@@ -62,13 +63,15 @@
    $code-background-color      : #fafafa;
    $code-background-color-dark : $light-gray;
    $text-color                 : $dark-gray;
-   $border-color               : $lighter-gray;
+   $border-color               : #dbd9d2;
    
    $primary-color              : #3f3736;
    $success-color              : #62c462;
    $warning-color              : #f89406;
    $danger-color               : #ee5f5b;
-   $info-color                 : #c39e9e;
+   // $info-color                 : #c39e9e;
+   $info-color                 : #7aa39a;
+   $header-color               : #5e7783;
    
    /* brands */
    $behance-color              : #1769FF;

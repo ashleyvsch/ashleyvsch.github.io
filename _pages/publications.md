@@ -3,6 +3,8 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+header:
+  overlay_color: '#5e7783'
 ---
 
 {% if author.googlescholar %}

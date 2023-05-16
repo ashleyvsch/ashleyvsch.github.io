@@ -36,7 +36,7 @@
 
 .page__title {
   margin-top: 0;
-  line-height: 1;
+  line-height: 1;  
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -109,7 +109,7 @@
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   @include clearfix;
   animation: intro 0.3s both;
   animation-delay: 0.25s;
@@ -117,7 +117,7 @@
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 3em 0;
+    padding: 2em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -151,7 +151,8 @@
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-5;
+      text-align: left;
 
       @include breakpoint($small) {
         font-size: $type-size-1;

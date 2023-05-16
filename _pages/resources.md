@@ -1,29 +1,31 @@
 ---
-# layout: default
-title: "Resources"
+layout: collection-archive
 permalink: /resources/
-layout: single
-toc: true
+title: "Resources"
 author_profile: true
+toc: true
+header:
+  overlay_color: '#5e7783'
+excerpt: "Here you will find links to many useful resources and tutorials I have developed! Many of these resources are developed from my own notes and journey through the learning process."
 ---
 
-Here you will find links to many useful resources and tutorials I have developed! Many of these resources are developed from my own notes and journey through the learning process. 
+# RNA Sequencing
 
+[Reference Based RNA Sequencing Analysis - Galaxy Tutorial](/posts/2020/05/deseq2-tutorial)
+- This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source 
+web-based platform for data intensive biomedical research. Galaxy is great for 
+conducting RNA-seq analysis when you don’t have access to the appropriate computing resources.
 
-## RNA Sequencing
+[From Gene Counts to Differential Expression - DESeq2 Tutorial](/posts/2020/05/deseq2-tutorial)
+- This tutorial is a continuation of the Galaxy tutorial where we go from gene counts to 
+differential expression using DESeq2. We even go through plotting and analysis!
 
-[Reference Based RNA Sequencing Analysis - Galaxy Tutorial](/resources/galaxy-tutorial/)
-- This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source web-based platform for data intensive biomedical research. Galaxy is great for conducting RNA-seq analysis when you don't have access to the appropriate computing resources. 
+# Machine Learning
 
-[From Gene Counts to Differential Expression - DESeq2](/resources/deseq2-tutorial/)
-- This tutorial is a continuation of the Galaxy tutorial where we go from gene counts to differential expression using DESeq2. We even go through plotting and analysis!
+[PyTorch Tutorial Using FashionMNIST](/fashion-mnist/PytorchFashionMNIST.html)
+- This tutorial walks through building a neural network using PyTorch using the FashionMNIST dataset. By the end of this tutorial, you should be able to have a neural network that predicts the clothing item given an image. 
 
-## Machine Learning
+# Miscellaneous Tutorials
 
-[PyTorch Tutorial - A Fashion MNIST Example](/fashion-mnist/PytorchFashionMNIST.html)
-- This tutorial walks though using PyTorch for the first time while building a neural network for the Fashion MNIST datset. By the end of this tutorial, you should be able to build a neural network that can predict with high accuracy the fashion item in an image. 
-
-## Random
-
-[Markdown Tricks](/resources/markdown/)
-- These are just some Markdown tips and tricks for a website such as this one, or really any Markdown files for that matter
+[Markdown](/posts/2023/05/markdown)
+- Just some common tips and tricks for Markdown files!
