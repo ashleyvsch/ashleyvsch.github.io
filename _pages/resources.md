@@ -11,7 +11,7 @@ excerpt: "Here you will find links to many useful resources and tutorials I have
 
 # RNA Sequencing
 
-[Reference Based RNA Sequencing Analysis - Galaxy Tutorial](/posts/2020/05/deseq2-tutorial)
+[Reference Based RNA Sequencing Analysis - Galaxy Tutorial](posts/2023/05/galaxy-tutorial)
 - This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source 
 web-based platform for data intensive biomedical research. Galaxy is great for 
 conducting RNA-seq analysis when you don’t have access to the appropriate computing resources.

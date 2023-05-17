@@ -1,7 +1,7 @@
 ---
 title: 'Reference Based RNA Sequencing Analysis - Galaxy Tutorial'
 date: 2023-05-05
-permalink: /2023/05/galaxy-tutorial
+permalink: /posts/2023/05/galaxy-tutorial
 layout: single
 excerpt: "This tutorial goes over the full RNA sequencing pipeline in Galaxy, an open source web-based platform for data intensive biomedical research. Galaxy is great for conducting RNA-seq analysis when you don't have access to the appropriate computing resources."
 categories: resource
