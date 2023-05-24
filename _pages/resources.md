@@ -16,7 +16,7 @@ excerpt: "Here you will find links to many useful resources and tutorials I have
 web-based platform for data intensive biomedical research. Galaxy is great for 
 conducting RNA-seq analysis when you don’t have access to the appropriate computing resources.
 
-[From Gene Counts to Differential Expression - DESeq2 Tutorial](/posts/2020/05/deseq2-tutorial)
+[From Gene Counts to Differential Expression - DESeq2 Tutorial](/posts/2023/05/deseq2-tutorial)
 - This tutorial is a continuation of the Galaxy tutorial where we go from gene counts to 
 differential expression using DESeq2. We even go through plotting and analysis!
 

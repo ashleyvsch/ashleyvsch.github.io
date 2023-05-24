@@ -7,7 +7,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 date: '2023-05-11'
-permalink: /posts/2020/05/deseq2-tutorial
+permalink: /posts/2023/05/deseq2-tutorial
 excerpt: "This tutorial is a continuation of the Galaxy tutorial where we go from gene counts to differential expression using DESeq2. We even go through plotting and analysis!"
 layout: single
 categories: resource
