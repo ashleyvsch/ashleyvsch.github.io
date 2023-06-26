@@ -60,6 +60,9 @@ _For a full list of my accomplishments, awards, projects, and much more please s
 
 ## Recent News
 
+- June 16, 2023 - My second first-author publication has been published in the _Journal of Xenobiotics!_ ([read paper](https://www.mdpi.com/2039-4713/13/2/21))
+- March 22, 2023 - Presented my work at the 2023 Society of Toxicology Annual Meeting.
+
 Check out my twitter page for some recent tweets, thoughts, and events.
 
 <a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/ashleyvschh?ref_src=twsrc%5Etfw">"Tweets from @ashleyvschh"</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
