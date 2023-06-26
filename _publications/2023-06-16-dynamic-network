@@ -1,0 +1,12 @@
+---
+title: "Development of a Dynamic Network Model to Identify Temporal Patterns of Structural Malformations in Zebrafish Embryos Exposed to a Model Toxicant, Tris(4-chlorophenyl)methanol"
+collection: publications
+# permalink: /publication/2021-05-07-mathematical-modeling-of-the-interaction-between-yolk-utilization-and-fish-growth-in-zebrafish-danio-rerio
+# excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
+date: 2023-06-16
+venue: 'Journal of Xenobiotics'
+link: 'https://doi.org/10.3390/jox13020021'
+# paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+citation: 'Schwartz, A.V.; Sant, K.E.; George, U.Z. Development of a Dynamic Network Model to Identify Temporal Patterns of Structural Malformations in Zebrafish Embryos Exposed to a Model Toxicant, Tris(4-chlorophenyl)methanol. J. Xenobiot. 2023, 13(2), 284-297.'
+abstract: "Embryogenesis is a well-coordinated process relying on precise cues and environmental signals that direct spatiotemporal embryonic patterning. Quite often, when one error in this process occurs, others tend to co-occur. We posit that investigating the co-occurrence of these abnormalities over time would yield additional information about the mode of toxicity for chemicals. Here, we use the environmental contaminant tris(4-chlorophenyl)methanol (TCPMOH) as a model toxicant to assess the relationship between exposures and co-occurrence of developmental abnormalities in zebrafish embryos. We propose a dynamic network modeling approach to study the co-occurrence of abnormalities, including pericardial edema, yolk sac edema, cranial malformation, spinal deformity, delayed/failed swim bladder inflation, and mortality induced by TCPMOH exposure. TCPMOH-exposed samples revealed increased abnormality co-occurrence when compared to controls. The abnormalities were represented as nodes in the dynamic network model. Abnormalities with high co-occurrence over time were identified using network centrality scores. We found that the temporal patterns of abnormality co-occurrence varied between exposure groups. In particular, the high TCPMOH exposure group experienced abnormality co-occurrence earlier than the low exposure group. The network model also revealed that pericardial and yolk sac edema are the most common critical nodes among all TCPMOH exposure levels, preceding further abnormalities. Overall, this study introduces a dynamic network model as a tool for assessing developmental toxicology, integrating structural and temporal features with a concentration response."
+---
