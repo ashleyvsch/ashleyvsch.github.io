@@ -11,24 +11,24 @@ header:
 
 
 # Overview 
+{: .text-center}
 
 
-Environmental pollutants are a constant threat for human development, health, 
-and the environment itself. The understanding of which pollutants are causing 
-the most harm, and how they are harmful, is a constant effort for developmental 
-and environmental toxicologists. My goal as a computational scientist is to aid 
-in the discovery of toxicant induced effects during embryonic development by 
-developing mathematical and computational tools. 
-
+Environmental pollutants are a constant threat for human development, health, and the environment itself. The understanding of which pollutants are causing the most harm, and how they are harmful, is a constant effort for developmental and environmental toxicologists. My goal as a computational scientist is to aid in the discovery of toxicant induced effects during embryonic development by developing mathematical and computational tools. 
+{: .text-justify}
 
 I work closely with Dr. Karilyn Sant of the School of Public Health at San Diego State University who studies common water pollutants and toxicants using the zebrafish model. It is through experimentation we are able to validate the mathematical and computational tools I develop. The close collaboration between Dr. Sant, Dr. Uduak George (SDSU, Department of Mathematics and Statistics), and myself has led to successful and rewarding interdisciplinary research projects.
+{: .text-justify}
 
 
 <hr>
 
 # Current Projects
+{: .text-center}
 
 ## Complex Network Models for TCPMOH Induced Developmental Deformities
+{: .text-center}
+
 <div>
     <div class="align-left">
         <img src="/images/tcpmoh.png" >
@@ -49,8 +49,11 @@ I work closely with Dr. Karilyn Sant of the School of Public Health at San Diego
         any new toxicant may have.
     </p>
 </div>
+{: .text-justify}
+
 
 ## Mathematical Models for Nutrient Absorption and Fish Growth
+{: .text-center}
 
 <div>
     <div class="align-left">
@@ -70,3 +73,4 @@ I work closely with Dr. Karilyn Sant of the School of Public Health at San Diego
         acid (PFOS).
     </p>
 </div>
+{: .text-justify}
