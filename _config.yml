@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Ashley Valentina Schwartz"
   avatar           : "headshot-square.jpg"
-  bio              : "Just a PhD student studying computational science and developmental toxicology. :)"
+  bio              : "PhD candidate studying computational science and developmental toxicology. :)"
   location         : "Southern California"
   employer         :
   pubmed           : 
@@ -117,6 +117,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  email            : "avschwartz@sdsu.edu"
 
 
 # Reading Files

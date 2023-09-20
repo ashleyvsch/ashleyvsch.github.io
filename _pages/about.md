@@ -2,12 +2,13 @@
 permalink: /
 title: "Welcome!"
 excerpt: "About me"
+layout: archive
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 feature_row:
-  - image_path: ARCS-soy-2023.jpeg
+  - image_path: posts/2023-arcs/ARCS-soy-2023.jpeg
     alt: "ARCS Scholar Image"
     title: "ARCS Scholar Recognition"
     excerpt: "I was recently recognized as an ARCS Scholar at the annual Scientist of the Year Event!"
@@ -46,9 +47,9 @@ I am a computational science PhD student in a joint doctoral program between [Sa
 
 # Fellowships and Scholarships
 
-- [2022 San Diego ARCS Scholar](https://san-diego.arcsfoundation.org/scholars/2022-2023-arcs-scholars)
-- [2020 ACM Computational and Data Science Fellow](https://www.sighpc.org/for-your-career/fellowships/2020-fellowship-winners)
-- [2020 NSF S-STEM ASSICS Scholar](https://sites.google.com/sdsu.edu/assics/home)
+- [2022-present San Diego ARCS Scholar](https://san-diego.arcsfoundation.org/scholars/2022-2023-arcs-scholars)
+- [2020-present NSF S-STEM ASSICS Scholar](https://sites.google.com/sdsu.edu/assics/home)
+- [2020-2022 ACM Computational and Data Science Fellow](https://www.sighpc.org/for-your-career/fellowships/2020-fellowship-winners)
 - [2019 Howell-CSUPERB Research Scholar](https://www.howellfoundation.org/csuperb-2019-scholars/)
 
 _For a full list of my accomplishments, awards, projects, and much more please see my [CV](/files/AVSchwartzCV.pdf)._
@@ -60,7 +61,8 @@ _For a full list of my accomplishments, awards, projects, and much more please s
 
 ## Recent News
 
-- June 16, 2023 - My second first-author publication has been published in the _Journal of Xenobiotics!_ ([read paper](https://www.mdpi.com/2039-4713/13/2/21))
+- September 6, 2023 - I successfully defended my dissertation proposal and have advanced to candidacy!
+- June 16, 2023 - My second first-author publication has been published in the _Journal of Xenobiotics._ ([read paper](https://www.mdpi.com/2039-4713/13/2/21))
 - March 22, 2023 - Presented my work at the 2023 Society of Toxicology Annual Meeting.
 
 Check out my twitter page for some recent tweets, thoughts, and events.

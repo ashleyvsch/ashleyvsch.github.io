@@ -5,43 +5,30 @@ permalink: /research/
 author_profile: true
 header:
   overlay_color: '#5e7783'
-excerpt: "Here you will find general information about projects I am working on. For more information, do not hesitate to contact me or my collaborators."
 ---
 
 {% include base_path %}
 
-<style>
-    h1 {text-align: center;}
-    h2 {text-align: center;}
-    p {text-align: justify;}
-</style>
 
-<hr> 
+# Overview 
 
-<h1> Overview </h1>
 
-<p>
-    Environmental pollutants are a constant threat for human development, health, 
-    and the environment itself. The understanding of which pollutants are causing 
-    the most harm, and how they are harmful, is a constant effort for developmental 
-    and environmental toxicologists. My goal as a computational scientist is to aid 
-    in the discovery of toxicant induced effects during embryonic development by 
-    developing mathematical and computational tools. 
-</p>
-<p>
-    I work closely with Dr. Karilyn Sant of the School of Public Health at San
-    Diego State University who studies common water pollutants and toxicants using 
-    the zebrafish model. It is through experimentation we are able to validate the 
-    mathematical and computational tools I develop. The close collaboration between
-     Dr. Sant, Dr. Uduak George (SDSU, Department of Mathematics and Statistics), 
-     and myself has led to successful and rewarding interdisciplinary research projects.
-</p>
+Environmental pollutants are a constant threat for human development, health, 
+and the environment itself. The understanding of which pollutants are causing 
+the most harm, and how they are harmful, is a constant effort for developmental 
+and environmental toxicologists. My goal as a computational scientist is to aid 
+in the discovery of toxicant induced effects during embryonic development by 
+developing mathematical and computational tools. 
 
-<hr> 
 
-<h1>Current Projects</h1>
+I work closely with Dr. Karilyn Sant of the School of Public Health at San Diego State University who studies common water pollutants and toxicants using the zebrafish model. It is through experimentation we are able to validate the mathematical and computational tools I develop. The close collaboration between Dr. Sant, Dr. Uduak George (SDSU, Department of Mathematics and Statistics), and myself has led to successful and rewarding interdisciplinary research projects.
 
-<h2>Complex Network Models for TCPMOH Induced Developmental Deformities</h2>
+
+<hr>
+
+# Current Projects
+
+## Complex Network Models for TCPMOH Induced Developmental Deformities
 <div>
     <div class="align-left">
         <img src="/images/tcpmoh.png" >
@@ -62,7 +49,9 @@ excerpt: "Here you will find general information about projects I am working on.
         any new toxicant may have.
     </p>
 </div>
-<h2>Mathematical Models for Nutrient Absorption and Fish Growth</h2>
+
+## Mathematical Models for Nutrient Absorption and Fish Growth
+
 <div>
     <div class="align-left">
             <img src="/images/zebrafish.png">
@@ -81,4 +70,3 @@ excerpt: "Here you will find general information about projects I am working on.
         acid (PFOS).
     </p>
 </div>
-
