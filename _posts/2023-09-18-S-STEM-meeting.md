@@ -1,7 +1,7 @@
 ---
 title: 'S-STEM Scholars Meeting'
 date: 2023-09-18
-permalink: /2023/09/s-stem
+permalink: /posts/2023/09/s-stem
 layout: single
 excerpt: "I am grateful to have been nominated and chosen to attend the annual S-STEM Scholar meeting in Washington D.C. from September 14-16, 2023 as a San Diego State University Computational Science Research Center representative."
 categories: news

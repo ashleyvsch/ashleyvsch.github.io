@@ -8,18 +8,18 @@ redirect_from:
   - /about/
   - /about.html
 feature_row:
-  - image_path: posts/2023-arcs/ARCS-soy-2023.jpeg
+  - image_path: danrerlib_logo.png
+    alt: "danRerLib Logo"
+    title: "danRerLib Python Package"
+    excerpt: "Excited to announce my new publication danRerLib: a python package for zebrafish transcriptomics!"
+    url: "/posts/2024/05/danrerlib"
+    btn_label: "Read More"
+    btn_class: "btn--inverse"
+  - image_path: /posts/2023-arcs/ARCS-soy-2023.jpeg
     alt: "ARCS Scholar Image"
     title: "ARCS Scholar Recognition"
     excerpt: "I was recently recognized as an ARCS Scholar at the annual Scientist of the Year Event!"
     url: "/posts/2023/05/arcs-soy"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
-  - image_path: posts/2023-acsess/feature.png
-    alt: "2023 ACSESS Feature Image"
-    title: "2023 CSRC ACSESS"
-    excerpt: "Check out a recent 5-minute presentation I gave about my recent research efforts and the related blog post."
-    url: "/2023/04/acsess-2023"
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: george-lab-members.JPG
@@ -30,7 +30,7 @@ feature_row:
     btn_class: "btn--inverse"    
 ---
 
-I am a computational science PhD student in a joint doctoral program between [San Diego State University](https://www.sdsu.edu/) and [University of California Irvine](https://uci.edu/). My research interests include developing and utilizing mathematical and computational modeling techniques for biological applications. The primary focus of my doctoral research is in computational developmental toxicology. I am under the advisement of [Dr. Uduak George](https://georgelab.sdsu.edu/) and [Dr. Karilyn Sant](https://publichealth.sdsu.edu/people/karilyn-sant/). For more information about my research please visit my [research page](/research)!
+I am a computational science PhD candidate in a joint doctoral program between [San Diego State University](https://www.sdsu.edu/) and [University of California Irvine](https://uci.edu/). My research interests include developing and utilizing mathematical and computational modeling techniques for biological applications. The primary focus of my doctoral research is in computational developmental toxicology. I am under the advisement of [Dr. Uduak George](https://georgelab.sdsu.edu/) and [Dr. Karilyn Sant](https://publichealth.sdsu.edu/people/karilyn-sant/). For more information about my research please visit my [research page](/research)!
 {: .text-justify}
 
 <hr>
@@ -45,6 +45,10 @@ I am a computational science PhD student in a joint doctoral program between [Sa
 
 <hr>
 
+# Featured 
+
+{% include feature_row %}
+
 # Fellowships and Scholarships
 
 - [2022-present San Diego ARCS Scholar](https://san-diego.arcsfoundation.org/scholars/2022-2023-arcs-scholars)
@@ -55,12 +59,9 @@ I am a computational science PhD student in a joint doctoral program between [Sa
 _For a full list of my accomplishments, awards, projects, and much more please see my [CV](/files/AVSchwartzCV.pdf)._
 <hr>
 
-# Featured 
-
-{% include feature_row %}
-
 ## Recent News
 
+- May 6, 2024 - Another chapter of my dissertation is ofically published in _Bioinformatics Advances._ ([read paper](https://doi.org/10.1093/bioadv/vbae065))
 - September 6, 2023 - I successfully defended my dissertation proposal and have advanced to candidacy!
 - June 16, 2023 - My second first-author publication has been published in the _Journal of Xenobiotics._ ([read paper](https://www.mdpi.com/2039-4713/13/2/21))
 - March 22, 2023 - Presented my work at the 2023 Society of Toxicology Annual Meeting.
