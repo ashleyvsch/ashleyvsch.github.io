@@ -9,7 +9,7 @@ tags:
   - news
 ---
 
-While working on my dissertation over the years, I have found some challenges to working with zebrafish transcripomics data. Most importantly, when looking at biological pathway analysis, there are limited annotations for zebrafish in comparison to other model organisms and especially humans. To make use of the additional annotations out there, we thought of creating a streamlined process for zebrafish researchers to conduct functional enrichment analysis through orthology in Python and release all the code open source through a Python package. Just recently, the associated publication has been accepted in Bioinformatics Advances. If you would like to check out the full publication you can find it [here](https://doi.org/10.1093/bioadv/vbae065). Below is the link to the comprehensive documentation website for the Python package!
+While working on my dissertation over the years, I have found some challenges to working with zebrafish transcriptomics data. Most importantly, when looking at biological pathway analysis, there are limited annotations for zebrafish in comparison to other model organisms and especially humans. To make use of the additional annotations out there, we thought of creating a streamlined process for zebrafish researchers to conduct functional enrichment analysis through orthology in Python and release all the code open source through a Python package. Just recently, the associated publication has been accepted in Bioinformatics Advances. If you would like to check out the full publication you can find it [here](https://doi.org/10.1093/bioadv/vbae065). Below is the link to the comprehensive documentation website for the Python package!
 
 <style>
 * {
