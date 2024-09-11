@@ -51,7 +51,7 @@ I am a computational science PhD candidate in a joint doctoral program between [
 
 # Fellowships and Scholarships
 
-- [2024-present SDSU Universtity Graduate Fellow](https://grad.sdsu.edu/financial-support/ugf)
+- [2024-present SDSU University Graduate Fellow](https://grad.sdsu.edu/financial-support/ugf)
 - [2022-present San Diego ARCS Scholar](https://san-diego.arcsfoundation.org/scholars/2022-2023-arcs-scholars)
 - [2020-present NSF S-STEM ASSICS Scholar](https://sites.google.com/sdsu.edu/assics/home)
 - [2020-2022 ACM Computational and Data Science Fellow](https://www.sighpc.org/for-your-career/fellowships/2020-fellowship-winners)
