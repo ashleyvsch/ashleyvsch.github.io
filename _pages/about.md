@@ -62,6 +62,7 @@ _For a full list of my accomplishments, awards, projects, and much more please s
 
 ## Recent News
 
+- August 19, 2024 - Excited to announce I have been awarded the SDSU University Graduate fellowship for this upcoming school year. 
 - May 6, 2024 - Another chapter of my dissertation is officially published in _Bioinformatics Advances._ ([read paper](https://doi.org/10.1093/bioadv/vbae065))
 - December 7, 2023 - My first published blog post is live through the Society of Toxicology. [read the post](https://toxchange.toxicology.org/blogs/ashley-schwartz/2023/12/07/exploring-gene-regulatory-networks-for-development).
 - September 6, 2023 - I successfully defended my dissertation proposal and have advanced to candidacy!
