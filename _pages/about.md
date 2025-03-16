@@ -30,18 +30,25 @@ feature_row:
     btn_class: "btn--inverse"    
 ---
 
-I am a computational science PhD candidate in a joint doctoral program between [San Diego State University](https://www.sdsu.edu/) and [University of California Irvine](https://uci.edu/). My research interests include developing and utilizing mathematical and computational modeling techniques for biological applications. The primary focus of my doctoral research is in computational developmental toxicology. I am under the advisement of [Dr. Uduak George](https://georgelab.sdsu.edu/) and [Dr. Karilyn Sant](https://publichealth.sdsu.edu/people/karilyn-sant/). For more information about my research please visit my [research page](/research)!
+I am a Computational Science PhD candidate in the joint doctoral program between San Diego State University and the University of California, Irvine. My research focuses on computational developmental toxicology, where I develop and apply mathematical and computational modeling techniques to study biological systems.
+
+Under the advisement of Dr. Uduak George and Dr. Karilyn Sant, my work integrates network analysis, machine learning, and high-throughput data analysis to understand the effects of environmental exposures on development. I am particularly interested in enhancing model interpretability and applying these methodologies to broader biological and toxicological challenges.
+
+For more details on my research, visit my [Research Page](/research)!
+<!-- I am a computational science PhD candidate in a joint doctoral program between [San Diego State University](https://www.sdsu.edu/) and [University of California Irvine](https://uci.edu/). My research interests include developing and utilizing mathematical and computational modeling techniques for biological applications. The primary focus of my doctoral research is in computational developmental toxicology. I am under the advisement of [Dr. Uduak George](https://georgelab.sdsu.edu/) and [Dr. Karilyn Sant](https://publichealth.sdsu.edu/people/karilyn-sant/). For more information about my research please visit my [research page](/research)! -->
 {: .text-justify}
 
 <hr>
 
 # Education
 
-<b>Computational Science</b>, <font color="#7e7f7a">Doctor of Philosophy</font> (2020 - present)
-<br><i>San Diego State University and University of California Irvine</i>
+<b>Computational Science</b>, <font color="#7e7f7a">Doctor of Philosophy</font> (2020 - present)<br>
+<i>San Diego State University and University of California Irvine</i>
+Dissertation Title: Computational Models to Assess the Role of Environmental Exposures in Development
 
-<b>Applied Mathematics</b>, <font color="#7e7f7a">Bachelor of Science, <i>cum laude</i></font> (2015-2019)
-<br><i>San Diego State University</i>
+
+<b>Applied Mathematics</b>, <font color="#7e7f7a">Bachelor of Science, <i>cum laude</i></font> (2015-2019)<br>
+<i>San Diego State University</i>
 
 <hr>
 
@@ -69,6 +76,6 @@ _For a full list of my accomplishments, awards, projects, and much more please s
 - June 16, 2023 - My second first-author publication has been published in the _Journal of Xenobiotics._ ([read paper](https://www.mdpi.com/2039-4713/13/2/21))
 - March 22, 2023 - Presented my work at the 2023 Society of Toxicology Annual Meeting.
 
-Check out my twitter page for some recent tweets, thoughts, and events.
+<!-- Check out my twitter page for some recent tweets, thoughts, and events.
 
-<a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/ashleyvschh?ref_src=twsrc%5Etfw">"Tweets from @ashleyvschh"</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/ashleyvschh?ref_src=twsrc%5Etfw">"Tweets from @ashleyvschh"</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
