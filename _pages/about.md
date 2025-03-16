@@ -42,12 +42,13 @@ For more details on my research, visit my [Research Page](/research)!
 
 # Education
 
-<b>Computational Science</b>, <font color="#7e7f7a">Doctor of Philosophy</font> (2020 - present)<br>
+<b>Doctor of Philosophy</b>, <font color="#7e7f7a">Computational Science</font> (2020 - present)<br>
 <i>San Diego State University and University of California Irvine</i>
-Dissertation Title: Computational Models to Assess the Role of Environmental Exposures in Development
+<br>
+<b>Dissertation Title<b>: Computational Models to Assess the Role of Environmental Exposures in Development
 
 
-<b>Applied Mathematics</b>, <font color="#7e7f7a">Bachelor of Science, <i>cum laude</i></font> (2015-2019)<br>
+<b>Bachelor of Science</b>, <font color="#7e7f7a">Applied Mathematics, <i>cum laude</i></font> (2015-2019)<br>
 <i>San Diego State University</i>
 
 <hr>
