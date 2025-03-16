@@ -11,7 +11,7 @@ header:
 
 
 # Overview 
-{: .text-center}
+<!-- {: .text-center} -->
 
 Environmental pollutants continue to pose significant threats to human health, development, and ecosystems. Identifying the most harmful pollutants and understanding the mechanisms through which they exert their effects remains a key focus of developmental and environmental toxicology. As a computational scientist, my goal is to contribute to these efforts by developing mathematical and computational tools that elucidate toxicant-induced effects during embryonic development.
 {: .text-justify}
@@ -23,11 +23,40 @@ I collaborate closely with Dr. Karilyn Sant at the School of Public Health, San 
 <hr>
 
 # Research Highlights
-{: .text-center}
+<!-- {: .text-center} -->
 
+## Birth Defects, Environmental Exposures, and Machine Learning
+
+Birth defects arise from a complex interplay of genetic, environmental, and maternal factors. My research employs multilayer network analysis and machine learning to uncover hidden patterns in large-scale birth outcome data. By integrating information on maternal health, environmental exposures, and newborn conditions, I aim to:
+{: .text-justify}
+
+- Identify high-risk factors associated with specific birth defects.
+- Determine co-occurring risk factors across different biological and environmental layers.
+- Build predictive models that improve early detection and intervention strategies.
+
+A key finding of my work shows that mothers with birth defects had an increase in variable co-occurrence across layers, supporting the multifactorial nature of birth defects. Additionally, by applying feature selection techniques, I have demonstrated that environmental exposures are critical predictors of adverse birth outcomes.
+{: .text-justify}
+
+This research highlights the power of computational approaches to enhance our understanding of maternal-fetal health and improve risk assessment models for birth defects.
+{: .text-justify}
+
+## Network Analysis & Machine Learning for Zebrafish Transcriptomics
+
+Toxicant exposure during early development can disrupt key biological pathways, leading to long-term health consequences. To better understand the molecular responses to environmental chemicals, I applied a combination of network-based clustering, gene co-expression analysis, and machine learning to zebrafish transcriptomic data.
+{: .text-justify}
+
+Using transcriptomics from zebrafish embryos exposed to a diverse panel of chemicals, my research uncovered:
+{: .text-justify}
+
+- Five distinct clusters of toxicant exposures, each linked to specific pancreatic pathway disruptions.
+- Gene co-expression networks that reveal shared and unique transcriptional responses across exposure groups.
+- Machine learning models that predict cluster membership based on chemical structure and physicochemical properties, identifying key features that drive toxicity.
+
+By integrating network science, functional genomics, and predictive modeling, this work demonstrates how computational toxicology can enhance risk assessment frameworks and provide mechanistic insights into chemical-induced toxicity.
+{: .text-justify}
 
 ## danRerLib: A Python Package for Zebrafish Transcriptomics
-{: .text-center}
+<!-- {: .text-center} -->
 
 <div>
     <div class="align-left">
@@ -70,7 +99,7 @@ I collaborate closely with Dr. Karilyn Sant at the School of Public Health, San 
 
 
 ## Mathematical Models for Nutrient Absorption and Fish Growth
-{: .text-center}
+<!-- {: .text-center} -->
 
 <div>
     <div class="align-left">
