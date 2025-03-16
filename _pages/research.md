@@ -5,6 +5,7 @@ permalink: /research/
 author_profile: true
 header:
   overlay_color: '#5e7783'
+toc: true
 ---
 
 {% include base_path %}
@@ -18,6 +19,12 @@ Environmental pollutants continue to pose significant threats to human health, d
 
 I collaborate closely with Dr. Karilyn Sant at the School of Public Health, San Diego State University (SDSU), who investigates the impacts of common water pollutants using the zebrafish model (Danio rerio). Together, with the support of Dr. Uduak George from SDSU's Department of Mathematics and Statistics, we validate the tools I develop, combining experimental data with advanced mathematical modeling. This interdisciplinary collaboration has led to the successful exploration of various environmental contaminants and their impacts.
 {: .text-justify}
+
+Environmental pollutants and toxicants pose significant risks to human health and development. Identifying harmful exposures and unraveling their mechanisms of toxicity is critical for public health and regulatory decision-making. My research lies at the intersection of computational modeling, network science, and machine learning, where I develop and apply mathematical and data-driven approaches to uncover toxicant-induced effects during embryonic development.
+
+I work closely with Dr. Karilyn Sant, Michigan State University Department of Pharmacology and Toxicology, whose lab investigates the effects of common pollutants using zebrafish (Danio rerio) as a model system. Additionally, under the guidance of Dr. Uduak George from SDSU’s Department of Mathematics and Statistics, I integrate computational, statistical, and machine learning methods to extract biological insights from complex datasets.
+
+Through this interdisciplinary collaboration, I have built network-based and predictive models that enhance our ability to identify key toxicants, determine their mechanisms of action, and predict potential health imp
 
 
 <hr>
@@ -60,7 +67,7 @@ By integrating network science, functional genomics, and predictive modeling, th
 
 <div>
     <div class="align-left">
-        <img src="/images/danrerlib_logo.png" >
+        <img src="/images/danrerlib_logo_v2.png" >
     </div>
     <p>
         Understanding differential gene expression pathways is crucial for identifying how organisms respond to environmental stressors. Zebrafish, with a transcriptome similar to humans, serve as a valuable model for studying development and disease. However, incomplete zebrafish pathway annotations can limit functional insights. danRerLib addresses this challenge by mapping zebrafish genes to human orthologs, allowing researchers to leverage more comprehensive human annotations. The package provides tools for functional enrichment analysis using up-to-date Gene Ontology (GO) and KEGG databases, offering a broader perspective on experimental results. Available on GitHub and PIP, with detailed documentation and tutorials. To learn more about this project, I recommend checking out the publication, associated documentation, and even a blog post I wrote about the topic with a mini-presentation on the work.
@@ -73,7 +80,6 @@ By integrating network science, functional genomics, and predictive modeling, th
 - [Blog Post with Video](https://ashleyschwartz.com/posts/2024/05/danrerlib)
 
 ## Complex Network Models for TCPMOH Induced Developmental Deformities
-{: .text-center}
 
 <div>
     <div class="align-left">
@@ -119,4 +125,32 @@ By integrating network science, functional genomics, and predictive modeling, th
         acid (PFOS).
     </p>
 </div>
+{: .text-justify}
+
+# Collaborative Research
+
+Beyond my primary research in computational toxicology, I have contributed to interdisciplinary projects as a computational lead that leverage RNA-Seq, other -omics data, and a variety of biological endpoints to uncover molecular mechanisms underlying disease.
+
+## Investigating IDH1 Mutations in Tumor Models
+
+One such collaboration explored how mutations in isocitrate dehydrogenase 1 (IDH1) impact tumor development through epigenetic and transcriptomic alterations. As part of this work, I conducted RNA-Seq data analysis, helping to identify key gene expression changes associated with different IDH1 mutations. Our findings demonstrated that:
+{: .text-justify}
+
+- IDH1 R132Q mutants exhibit higher catalytic efficiency for producing the oncometabolite D-2-hydroxyglutarate (D2HG) compared to R132H mutants.
+- This difference in D2HG levels correlates with distinct DNA methylation patterns, particularly in DNA damage and repair pathways.
+- Transcriptomic profiling revealed differential activation of oncogenic pathways, including EGFR and PI3K signaling, suggesting IDH1 R132Q may drive a more aggressive tumor phenotype.
+
+This work highlights the power of transcriptomics and multi-omics approaches in uncovering mechanistic insights into cancer biology.
+{: .text-justify}
+
+## Quantifying Pulmonary Inflammation in Viral Infections
+
+As part of a collaborative study on acetylcholine’s role in immune regulation during influenza infection, I developed an automated image processing algorithm to quantify inflammation in lung tissue. This work involved:
+{: .text-justify}
+
+- Developing an image analysis pipeline to process Iba1 immunofluorescence images, allowing for objective, high-throughput quantification of immune cell activity.
+- Automating macrophage activation scoring, reducing subjectivity and manual effort compared to traditional histological methods.
+- Applying the method to study the effects of acetylcholine inhibition on pulmonary inflammation, showing that ACh depletion led to increased inflammation and impaired tissue repair.
+
+This approach highlights the power of computational image analysis in immunology and disease pathology, enabling precise, reproducible quantification of biological processes.
 {: .text-justify}
