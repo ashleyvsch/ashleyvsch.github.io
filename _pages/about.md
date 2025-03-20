@@ -45,7 +45,7 @@ For more details on my research, visit my [Research Page](/research)!
 <b>Doctor of Philosophy</b>, <font color="#7e7f7a">Computational Science</font> (2020 - present)<br>
 <i>San Diego State University and University of California Irvine</i>
 <br>
-<b>Dissertation Title</b>: Computational Models to Assess the Role of Environmental Exposures in Development
+<b>Dissertation Title<b>: Computational Models to Assess the Role of Environmental Exposures in Development
 
 
 <b>Bachelor of Science</b>, <font color="#7e7f7a">Applied Mathematics, <i>cum laude</i></font> (2015-2019)<br>
