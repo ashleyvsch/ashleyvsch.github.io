@@ -73,6 +73,7 @@ _For a full list of my accomplishments, awards, projects, and much more please s
 - May 5, 2025 - The third chapter of my dissertation has been accepted for publication in _Toxicological Sciences_ and is currently in press! Stay tuned for the official publication link. 
 - April 30, 2025 - Excited to announce I have successfully defended my PhD dissertation!
 - April 2, 2025 - A recent collaborative project has officially been selected for publication in the _Journal of Biological Chemistry_! Check out the [article](https://doi.org/10.1016/j.jbc.2025.108477)!
+- October 30, 2024 - Happy to share I was a selected featured spearker and Third Place winner at the SCCSOT Meeting. [Learn more...](https://ashleyschwartz.com/posts/2024/10/sccsot)
 - August 19, 2024 - Excited to announce I have been awarded the SDSU University Graduate fellowship for this upcoming school year. 
 - May 6, 2024 - Another chapter of my dissertation is officially published in _Bioinformatics Advances._ ([read paper](https://doi.org/10.1093/bioadv/vbae065))
 - December 7, 2023 - My first published blog post is live through the Society of Toxicology. [read the post](https://toxchange.toxicology.org/blogs/ashley-schwartz/2023/12/07/exploring-gene-regulatory-networks-for-development).
