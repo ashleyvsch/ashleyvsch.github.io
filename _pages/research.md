@@ -39,7 +39,7 @@ Birth defects arise from a complex interplay of genetic, environmental, and mate
 A key finding of my work shows that mothers with birth defects had an increase in variable co-occurrence across layers, supporting the multifactorial nature of birth defects. Additionally, by applying feature selection techniques, I have demonstrated that environmental exposures are critical predictors of adverse birth outcomes.
 {: .text-justify}
 
-This research highlights the power of computational approaches to enhance our understanding of maternal-fetal health and improve risk assessment models for birth defects.
+This research highlights the power of computational approaches to enhance our understanding of maternal-fetal health and improve risk assessment models for birth defects. The finding of this work have currently been submitted for publication.
 {: .text-justify}
 
 ## Network Analysis & Machine Learning for Zebrafish Transcriptomics
@@ -52,9 +52,9 @@ Using transcriptomics from zebrafish embryos exposed to a diverse panel of chemi
 
 - Five distinct clusters of toxicant exposures, each linked to specific pancreatic pathway disruptions.
 - Gene co-expression networks that reveal shared and unique transcriptional responses across exposure groups.
-- Machine learning models that predict cluster membership based on chemical structure and physicochemical properties, identifying key features that drive toxicity.
+- Machine learning models that predict cluster membership based on chemical properties, identifying key features that drive toxicity.
 
-By integrating network science, functional genomics, and predictive modeling, this work demonstrates how computational toxicology can enhance risk assessment frameworks and provide mechanistic insights into chemical-induced toxicity.
+By integrating network science, functional genomics, and predictive modeling, this work demonstrates how computational toxicology can enhance risk assessment frameworks and provide mechanistic insights into chemical-induced toxicity. This work has recently been accepted for publication in _Toxicological Sciences_ and is currently in press.
 {: .text-justify}
 
 ## danRerLib: A Python Package for Zebrafish Transcriptomics
@@ -138,6 +138,21 @@ One such collaboration explored how mutations in isocitrate dehydrogenase 1 (IDH
 This work highlights the power of transcriptomics and multi-omics approaches in uncovering mechanistic insights into cancer biology.
 {: .text-justify}
 
+## Spatial Transcriptomics Reveals Macrophage Heterogeneity in Vaping-Associated Lung Inflammation
+
+Spatial Transcriptomics Reveals Macrophage Heterogeneity in Vaping-Associated Lung Inflammation
+In collaboration with pulmonary biology researchers, I applied spatial transcriptomics and machine learning to investigate how chronic exposure to vape juice alters macrophage behavior in the lungs. Using mouse models exposed to vape aerosols over nine weeks, we analyzed gene expression in the context of whole-lung architecture, enabling spatially resolved profiling of immune responses.
+{: .text-justify}
+
+Key findings from this project include:
+- Identification of macrophage-expressed genes—Myl4, Myl7, Bpifa1, and Hbb-bs—that robustly distinguish vaped from control lungs.
+- Machine learning models (Random Forest, LASSO logistic regression) revealed gene signatures linked to chronic vaping exposure and highlighted sex-specific transcriptional responses.
+- Spatial network analysis uncovered microenvironment-specific pathway alterations, indicating that macrophage function is not uniform across lung regions.
+- Both male and female vaped mice exhibited distinct inflammatory pathway activity, suggesting vaping broadly disrupts immune homeostasis in the lung.
+
+This work underscores the importance of spatially resolved transcriptomic analysis in understanding immune heterogeneity and the biological consequences of vaping. The results of this work is currently in preparation for publication.
+{: .text-justify}
+
 ## Quantifying Pulmonary Inflammation in Viral Infections
 
 As part of a collaborative study on acetylcholine’s role in immune regulation during influenza infection, I developed an automated image processing algorithm to quantify inflammation in lung tissue. This work involved:
@@ -147,5 +162,5 @@ As part of a collaborative study on acetylcholine’s role in immune regulation 
 - Automating macrophage activation scoring, reducing subjectivity and manual effort compared to traditional histological methods.
 - Applying the method to study the effects of acetylcholine inhibition on pulmonary inflammation, showing that ACh depletion led to increased inflammation and impaired tissue repair.
 
-This approach highlights the power of computational image analysis in immunology and disease pathology, enabling precise, reproducible quantification of biological processes.
+This approach highlights the power of computational image analysis in immunology and disease pathology, enabling precise, reproducible quantification of biological processes. This work is currently published and can be found [here](https://www.tandfonline.com/doi/full/10.2147/ITT.S279228).
 {: .text-justify}
